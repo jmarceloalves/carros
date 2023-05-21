@@ -74,7 +74,7 @@ function pesquisarLivro() {
 function exluirLivro() {
     nomeLivro = prompt('Digite o nome do livro:');
     let flagRetorno = false;
-    let i = 1;
+    let i = 0;
 
     baseLivros.forEach(livro => { 
         if (livro.nomeLivro == nomeLivro) {
@@ -94,7 +94,7 @@ function exluirLivro() {
 function alterarLivro() {
     let nomeLivro = prompt('Digite o nome do livro:');
     let flagRetorno = false;
-    let i = 1;
+    let i = 0;
 
     baseLivros.forEach(livro => {
         if (livro.nomeLivro == nomeLivro) {
@@ -117,8 +117,8 @@ function alterarLivro() {
 function filtrarLivros() {
     let categoriaLivro = prompt('Digite a categoria desejada:');
     let flagRetorno = false;
-    let i = 1;
-    
+    let i = 0;
+
     baseLivros.forEach(livro => {
         if (livro.categoriaLivro == categoriaLivro) {
             alert(`
